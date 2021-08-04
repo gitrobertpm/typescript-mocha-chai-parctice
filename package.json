@@ -1,0 +1,24 @@
+{
+  "name": "typescript-mocha-chai-parctice",
+  "version": "1.0.0",
+  "description": "Practicing TypeScript, Mocha and Chai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitrobertpm/typescript-mocha-chai-parctice.git"
+  },
+  "keywords": [],
+  "author": "robertpm <grobertpm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gitrobertpm/typescript-mocha-chai-parctice/issues"
+  },
+  "homepage": "https://github.com/gitrobertpm/typescript-mocha-chai-parctice#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "^4.3.5"
+  }
+}
