@@ -2,12 +2,13 @@
   "name": "typescript-mocha-chai-practice",
   "version": "1.0.0",
   "description": "Practicing TypeScript, Mocha and Chai",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "eslint -c .eslintrc.json --parser tsconfig.json --fix",
     "build": "tsc",
-    "start": "node dist/index",
+    "prestart": "npm run build",
+    "start": "node .",
     "dev": "nodemon dist/index"
   },
   "repository": {
