@@ -5,6 +5,14 @@ import axios from 'axios';
 const app = express(); console.log(typeof app);
 const port: number = 8080;
 
+
+// Title-ize string
+export const titleCase: Function = (str: string) => {
+  console.log('TEST');
+  return str;
+};
+
+
 // Helper middleware for wrapping async functions in a try catch block
 const asyncHandler: Function = (cb: Function) => {
   return async (req: Request, res: Response, next: Function) => {
@@ -51,3 +59,4 @@ app.get("/", asyncHandler(async (req: Request, res: IRes, next: Function) => {
 app.listen(port, () => {
   console.log(`server started at http://localhost:${port}`);
 });
+
