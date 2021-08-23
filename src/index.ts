@@ -2,14 +2,21 @@
 import express from "express";
 import axios from 'axios';
 
-const app = express(); console.log(typeof app);
+const app = express();
 const port: number = 8080;
 
 
-// Title-ize string
+// Title-ize a string
 export const titleCase: Function = (str: string) => {
-  console.log('TEST');
-  return str;
+
+  if (str === '' || str === null) {
+    console.error('ERROR: Invalid input');
+    return 'Please enter a string';
+  }
+
+  const titled = str.split(' ').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+  // console.log(titled);
+  return titled;
 };
 
 

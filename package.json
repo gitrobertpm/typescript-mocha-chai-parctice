@@ -10,7 +10,7 @@
     "prestart": "npm run build",
     "start": "node .",
     "test": "mocha -r ts-node/register src/**/*.spec.ts",
-    "dev": "tsc",
+    "dev": "tsc && npm run test",
     "postdev": "node dist/index.js",
     "clear": "rm -r dist/* || true"
   },

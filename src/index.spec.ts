@@ -3,20 +3,26 @@ import "mocha";
 
 import { titleCase } from './index';
 
-describe("This", () => {
-  describe("should", () => {
-    it("always pass", () => {
-      expect(true).to.equal(true);
-    });
-  });
-});
+/**
+ * Sanity test
+ */
+// describe("This", () => {
+//   describe("should", () => {
+//     it("always pass", () => {
+//       expect(true).to.equal(true);
+//     });
+//   });
+// });
 
 
-describe("This", () => {
-  describe("should", () => {
-    it("always pass", () => {
-      expect(titleCase('fear and loathing in las vegas')).to.be.a('string');
-    });
+/**
+ * Test suite to check if input string has first letter of each word capitalized 
+ */
+describe("TitleCase", () => {
+
+  // Test spec (unit test)
+  it("should turn a string into a proper title", () => {
+    //expect(titleCase('fear and loathing in las vegas')).to.be.a('string');
+    expect(titleCase('fear and loathing in las vegas')).to.equal('Fear And Loathing In Las Vegas');
   });
 });
-// expect(titleCase('fear and loathing in las vegas')).to.be.a('string');
