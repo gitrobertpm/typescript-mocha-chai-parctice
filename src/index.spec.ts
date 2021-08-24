@@ -22,7 +22,14 @@ describe("TitleCase", () => {
 
   // Test spec (unit test)
   it("should turn a string into a proper title", () => {
-    //expect(titleCase('fear and loathing in las vegas')).to.be.a('string');
-    expect(titleCase('fear and loathing in las vegas')).to.equal('Fear And Loathing In Las Vegas');
+    expect(titleCase('fear and loathing in las vegas')).to.equal('Fear and Loathing In Las Vegas');
+  });
+
+  it("should turn a string into a proper title", () => {
+    expect(titleCase("aren't can't don't won't")).to.equal("Aren't can't don't Won't");
+  });
+
+  it("should turn a string into a proper title", () => {
+    expect(titleCase('a i o u xyz to be free')).to.equal('A I O U Xyz to Be Free');
   });
 });
