@@ -1,9 +1,13 @@
 
 import express from "express";
 import axios from 'axios';
+import path from 'path';
 
 const app = express();
 const port: number = 8080;
+
+app.set('view engine', 'pug');
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
 
 // Title-ize a string
